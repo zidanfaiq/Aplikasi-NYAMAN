@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/homeMenu"
+        android:icon="@drawable/ic_baseline_restaurant_menu_24"
+        android:title="@string/home"
+        />
+
+    <item
+        android:id="@+id/pesanMenu"
+        android:icon="@drawable/ic_baseline_receipt_24"
+        android:title="@string/pesan"
+        />
+
+    <item
+        android:id="@+id/profilMenu"
+        android:icon="@drawable/ic_baseline_account_circle_24"
+        android:title="@string/profil"
+        />
+</menu>

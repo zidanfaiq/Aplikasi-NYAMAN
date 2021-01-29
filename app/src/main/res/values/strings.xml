@@ -1,0 +1,329 @@
+<resources>
+    <string name="app_name">NYAM.AN</string>
+    <string name="home">Home</string>
+    <string name="profil">Profil</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="pesan">Pesan</string>
+    <string name="tampil_resto">Restoran</string>
+    <string name="tampil_makanan">Makanan</string>
+
+    <string-array name="data_nama_resto">
+        <item>Table Nine Resto</item>
+        <item>Red Chili Restaurant</item>
+        <item>Posant cafe Resto</item>
+        <item>Oemah Daun Cafe dan Resto</item>
+        <item>Djago Jowo Purwokerto</item>
+        <item>Restoran Taman Pringgading</item>
+        <item>Waroenk Ora Umum Purwokerto</item>
+        <item>RM Ampera Banyumasan</item>
+        <item>Lombok Idjo Purwokerto</item>
+        <item>Sambel Layah Purwokerto</item>
+    </string-array>
+
+    <string-array name="data_deskripsi_resto">
+        <item>"Jl. Profesor DR. HR Bunyamin Purwokerto Utara, Pabuwaran, Pabuaran, Banyumas, Kabupaten Banyumas, Jawa Tengah 53124
+Buka :
+Senin, 09.00–22.00
+Selasa, 09.00–22.00
+Rabu, 09.00–22.00
+Kamis, 09.00–22.00
+Jumat, 09.00–22.00
+Sabtu, 09.00–22.00
+Minggu, 09.00–22.00
+Telepon : +62281627799"</item>
+        <item>"Jalan Raya Baturaden No.KM. 6, Karang Blimbing, Pandak, Kec. Baturaden, Kabupaten Banyumas, Jawa Tengah 53124
+Buka :
+Senin, 09.00–22.00
+Selasa, 09.00–22.00
+Rabu, 09.00–22.00
+Kamis, 09.00–22.00
+Jumat, 09.00–22.00
+Sabtu, 09.00–22.00
+Minggu, 09.00–22.00
+Telepon : +622816574573"</item>
+        <item>"Purwanegara, Karangjambu, Purwanegara, Kec. Purwokerto Tim., Kabupaten Banyumas, Jawa Tengah 53127
+Buka :
+Senin, 11.00–22.00
+Selasa, 11.00–22.00
+Rabu, 11.00–22.00
+Kamis, 11.00–22.00
+Jumat, 11.00–22.00
+Sabtu, 11.00–22.00
+Minggu, 11.00–22.00
+Telepon : +6281903304254"</item>
+        <item>"Jl. KH. Wahid Hasyim No.101 - 103, Windusara, Karangklesem, Kec. Purwokerto Sel., Kabupaten Banyumas, Jawa Tengah 53144
+Buka :
+Senin, 10.00–20.00
+Selasa, 10.00–20.00
+Rabu, 10.00–20.00
+Kamis, 10.00–20.00
+Jumat, 10.00–20.00
+Sabtu, 10.00–20.00
+Minggu, 10.00–20.00
+Telepon : +62281635169"</item>
+        <item>"Jl. Gelora Indah I, Mangunjaya, Purwokerto Lor, Kec. Purwokerto Tim., Kabupaten Banyumas, Jawa Tengah 53113
+Buka :
+Senin, 09.00–21.00
+Selasa, 09.00–21.00
+Rabu, 09.00–21.00
+Kamis, 09.00–21.00
+Jumat, 09.00–21.00
+Sabtu, 09.00–21.00
+Minggu, 09.00–21.00
+Telepon : +628112626772"</item>
+        <item>"Jl. DI Panjaitan No.217, Karangreja, Purwokerto Kidul, Kec. Purwokerto Sel., Kabupaten Banyumas, Jawa Tengah 53141
+Buka :
+Senin, 11.00–20.00
+Selasa, 11.00–20.00
+Rabu, 11.00–20.00
+Kamis, 11.00–20.00
+Jumat, 11.00–20.00
+Sabtu, 07.30–22.00
+Minggu, 11.00–20.00
+Telepon : +62281636372"</item>
+        <item>"Jl. DR. Soeparno No.98, Arcawinangun, Kec. Purwokerto Tim., Kabupaten Banyumas, Jawa Tengah 53113
+Buka :
+Senin, Buka 24 jam
+Selasa, Buka 24 jam
+Rabu, Buka 24 jam
+Kamis, Buka 24 jam
+Jumat, Buka 24 jam
+Sabtu, Buka 24 jam
+Minggu, Buka 24 jam
+Telepon : +628112993333"</item>
+        <item>"Jl. Pierre Tendean No.41, Brubahan, Purwanegara, Kec. Purwokerto Utara, Kabupaten Banyumas, Jawa Tengah 53116
+Buka :
+Senin, 09.00–21.00
+Selasa, 09.00–21.00
+Rabu, 09.00–21.00
+Kamis, 09.00–21.00
+Jumat, 09.00–21.00
+Sabtu, 09.00–21.00
+Minggu, 09.00–21.00
+Telepon : +62281642243"</item>
+        <item>"Jl. Gelora Indah 2 No.7, Mangunjaya, Purwokerto Lor, Kec. Purwokerto Tim., Kabupaten Banyumas, Jawa Tengah 53114
+Buka :
+Senin, 10.00–21.30
+Selasa, 10.00–21.30
+Rabu, 10.00–21.30
+Kamis, 10.00–21.30
+Jumat, 10.00–21.30
+Sabtu, 10.00–21.30
+Minggu, 10.00–21.30
+Telepon : +622816512946"</item>
+        <item>"Jl. DR. Soeparno, Arcawinangun, Kec. Purwokerto Tim., Kabupaten Banyumas, Jawa Tengah 53113
+Buka :
+Senin, 08.00–21.00
+Selasa, 08.00–21.00
+Rabu, 08.00–21.00
+Kamis, 08.00–21.00
+Jumat, 08.00–21.00
+Sabtu, 08.00–21.00
+Minggu, 08.00–21.00
+Telepon : +622811500074"</item>
+    </string-array>
+
+    <string-array name="data_foto_resto">
+        <item>https://media-cdn.tripadvisor.com/media/photo-s/04/58/88/4b/getlstd-property-photo.jpg</item>
+        <item>https://media-cdn.tripadvisor.com/media/photo-s/0d/18/fb/99/p-20160925-204542-largejpg.jpg</item>
+        <item>https://lh3.googleusercontent.com/p/AF1QipMNLvVq1Wp6sNDvl0XJwsg61TZwEWLUUjMZtLQx=s1600-w1000</item>
+        <item>https://media-cdn.tripadvisor.com/media/photo-s/0c/90/b7/99/photo0jpg.jpg</item>
+        <item>https://media-cdn.tripadvisor.com/media/photo-s/0a/67/2a/27/ikon-gamelan-menghiasi.jpg</item>
+        <item>https://lh3.googleusercontent.com/arjWns-Karh4fsHy4Us7CUFBm6ZEY7lea6i04MATYJ4qdAg_QIMzqUvE-gdUjgj1aCwg0aQgZQ=w1080-h608-p-no-v0</item>
+        <item>https://media-cdn.tripadvisor.com/media/photo-s/11/79/cc/4c/ta-img-20171209-181116.jpg</item>
+        <item>https://media-cdn.tripadvisor.com/media/photo-s/0b/95/ab/8a/rumah-makan-ampera-banyumasan.jpg</item>
+        <item>https://media-cdn.tripadvisor.com/media/photo-s/0d/0d/bd/91/img-20160922-wa0004-largejpg.jpg</item>
+        <item>https://idahceris.files.wordpress.com/2016/01/rm-sambalayah-purwokerto-parkiran.jpg</item>
+    </string-array>
+
+    <string-array name="data_lat">
+        <item>-7.395186501017864</item>
+        <item>-7.38381623453157</item>
+        <item>-7.401248362169402</item>
+        <item>-7.447149680831831</item>
+        <item>-7.41896236476222</item>
+        <item>-7.433878973622811</item>
+        <item>-7.41548063486622</item>
+        <item>-7.424979355761837</item>
+        <item>-7.418154894640161</item>
+        <item>-7.419467994639256</item>
+    </string-array>
+
+    <string-array name="data_lang">
+        <item>109.2449006411854</item>
+        <item>109.24194386789982</item>
+        <item>109.23146512618315</item>
+        <item>109.2437026705927</item>
+        <item>109.25145999673549</item>
+        <item>109.2490429323181</item>
+        <item>109.25424113231783</item>
+        <item>109.2406285679003</item>
+        <item>109.24970716790004</item>
+        <item>109.25468029673551</item>
+    </string-array>
+
+    <string-array name="data_nama_makanan">
+        <item>Nasi Goreng</item>
+        <item>Mie Goreng</item>
+        <item>Mie Kuah</item>
+        <item>Nasi Ayam Goreng</item>
+        <item>Nasi Ayam Bakar</item>
+        <item>Air Putih</item>
+        <item>Tea</item>
+        <item>Jus Jeruk</item>
+        <item>Jus Alpukat</item>
+        <item>Susu</item>
+    </string-array>
+
+    <string-array name="data_harga_makanan">
+        <item>Rp. 12.000</item>
+        <item>Rp. 12.000</item>
+        <item>Rp. 12.000</item>
+        <item>Rp. 15.000</item>
+        <item>Rp. 15.000</item>
+        <item>Rp. 1.000</item>
+        <item>Rp. 2.000</item>
+        <item>Rp. 4.000</item>
+        <item>Rp. 10.000</item>
+        <item>Rp. 5.000</item>
+    </string-array>
+
+    <string-array name="data_foto_makanan">
+        <item>https://1.bp.blogspot.com/-brNNo9Gt90Q/Va-ZBMqHk5I/AAAAAAAAADk/NQMSWAGX98s/s400/resep-nasi-goreng-sederhana.jpg</item>
+        <item>https://i1.wp.com/wirapax.com/wp-content/uploads/2018/03/Mie-Goreng-Biasa.jpg</item>
+        <item>https://1.bp.blogspot.com/-75aVPrF8NXk/WcHeSLnLJHI/AAAAAAAABn0/Xbb_V6o0n08i5o-583EOIrzbA6bRtiuhQCLcBGAs/s1600/1505877492607.jpg</item>
+        <item>https://cdn.idntimes.com/content-images/post/20191205/72490026-776557992815618-593725874878062028-n-df889a18e4dde5cdbfe82d5ad558b3ef.jpg</item>
+        <item>https://totabuan.news/wp-content/uploads/2020/05/20180604150310-1-ilustrasi-ayam-bakar-003-tantri-setyorini.jpg</item>
+        <item>https://4.bp.blogspot.com/-qz0hlotjdFw/XMji--lk8RI/AAAAAAAAD78/8s5ytGzilwce94yYE_5yvJQ0-YlKVyRjgCLcBGAs/s1600/bottle-2582012_1280.jpg</item>
+        <item>https://cdn.akurat.co/images/uploads/images/akurat_20181029123557_B6tXpj.jpg</item>
+        <item>https://www.sijekpulsa.com/assets_shop/product/ifrA-3543-original.jpg</item>
+        <item>https://cdn.yummy.co.id/content-images/images/20200702/M1FzhM0fy2wwuNp1uzhDc5Wox04qOhmd-31353933363633383639d41d8cd98f00b204e9800998ecf8427e_800x800.jpg</item>
+        <item>https://media-cdn.tripadvisor.com/media/photo-s/14/25/22/29/es-susu-putih.jpg</item>
+    </string-array>
+
+    <string name="title_activity_detail">ScrollingActivity</string>
+    <string name="large_text">
+        "Material is the metaphor.\n\n"
+
+        "A material metaphor is the unifying theory of a rationalized space and a system of motion."
+        "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
+        "technologically advanced and open to imagination and magic.\n"
+        "Surfaces and edges of the material provide visual cues that are grounded in reality. The "
+        "use of familiar tactile attributes helps users quickly understand affordances. Yet the "
+        "flexibility of the material creates new affordances that supercede those in the physical "
+        "world, without breaking the rules of physics.\n"
+        "The fundamentals of light, surface, and movement are key to conveying how objects move, "
+        "interact, and exist in space and in relation to each other. Realistic lighting shows "
+        "seams, divides space, and indicates moving parts.\n\n"
+
+        "Bold, graphic, intentional.\n\n"
+
+        "The foundational elements of print based design typography, grids, space, scale, color, "
+        "and use of imagery guide visual treatments. These elements do far more than please the "
+        "eye. They create hierarchy, meaning, and focus. Deliberate color choices, edge to edge "
+        "imagery, large scale typography, and intentional white space create a bold and graphic "
+        "interface that immerse the user in the experience.\n"
+        "An emphasis on user actions makes core functionality immediately apparent and provides "
+        "waypoints for the user.\n\n"
+
+        "Motion provides meaning.\n\n"
+
+        "Motion respects and reinforces the user as the prime mover. Primary user actions are "
+        "inflection points that initiate motion, transforming the whole design.\n"
+        "All action takes place in a single environment. Objects are presented to the user without "
+        "breaking the continuity of experience even as they transform and reorganize.\n"
+        "Motion is meaningful and appropriate, serving to focus attention and maintain continuity. "
+        "Feedback is subtle yet clear. Transitions are efﬁcient yet coherent.\n\n"
+
+        "3D world.\n\n"
+
+        "The material environment is a 3D space, which means all objects have x, y, and z "
+        "dimensions. The z-axis is perpendicularly aligned to the plane of the display, with the "
+        "positive z-axis extending towards the viewer. Every sheet of material occupies a single "
+        "position along the z-axis and has a standard 1dp thickness.\n"
+        "On the web, the z-axis is used for layering and not for perspective. The 3D world is "
+        "emulated by manipulating the y-axis.\n\n"
+
+        "Light and shadow.\n\n"
+
+        "Within the material environment, virtual lights illuminate the scene. Key lights create "
+        "directional shadows, while ambient light creates soft shadows from all angles.\n"
+        "Shadows in the material environment are cast by these two light sources. In Android "
+        "development, shadows occur when light sources are blocked by sheets of material at "
+        "various positions along the z-axis. On the web, shadows are depicted by manipulating the "
+        "y-axis only. The following example shows the card with a height of 6dp.\n\n"
+
+        "Resting elevation.\n\n"
+
+        "All material objects, regardless of size, have a resting elevation, or default elevation "
+        "that does not change. If an object changes elevation, it should return to its resting "
+        "elevation as soon as possible.\n\n"
+
+        "Component elevations.\n\n"
+
+        "The resting elevation for a component type is consistent across apps (e.g., FAB elevation "
+        "does not vary from 6dp in one app to 16dp in another app).\n"
+        "Components may have different resting elevations across platforms, depending on the depth "
+        "of the environment (e.g., TV has a greater depth than mobile or desktop).\n\n"
+
+        "Responsive elevation and dynamic elevation offsets.\n\n"
+
+        "Some component types have responsive elevation, meaning they change elevation in response "
+        "to user input (e.g., normal, focused, and pressed) or system events. These elevation "
+        "changes are consistently implemented using dynamic elevation offsets.\n"
+        "Dynamic elevation offsets are the goal elevation that a component moves towards, relative "
+        "to the component’s resting state. They ensure that elevation changes are consistent "
+        "across actions and component types. For example, all components that lift on press have "
+        "the same elevation change relative to their resting elevation.\n"
+        "Once the input event is completed or cancelled, the component will return to its resting "
+        "elevation.\n\n"
+
+        "Avoiding elevation interference.\n\n"
+
+        "Components with responsive elevations may encounter other components as they move between "
+        "their resting elevations and dynamic elevation offsets. Because material cannot pass "
+        "through other material, components avoid interfering with one another any number of ways, "
+        "whether on a per component basis or using the entire app layout.\n"
+        "On a component level, components can move or be removed before they cause interference. "
+        "For example, a floating action button (FAB) can disappear or move off screen before a "
+        "user picks up a card, or it can move if a snackbar appears.\n"
+        "On the layout level, design your app layout to minimize opportunities for interference. "
+        "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
+        "when a user tries to pick up one of cards.\n\n"
+    </string>
+    <string name="menu">Menu</string>
+    <string name="harga">Harga</string>
+    <string name="keterangan">Keterangan</string>
+    <string name="date">Date</string>
+    <string name="submit">Submit</string>
+    <string name="delete">Delete</string>
+    <string name="add">Tambah</string>
+    <string name="signup">Sign Up</string>
+    <string name="signin">Sign In</string>
+    <string name="setting">Setting</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="dark_theme">Tema Gelap</string>
+    <string name="yes">Ya</string>
+    <string name="no">Tidak</string>
+    <string name="save">Simpan</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="refresh">Refresh</string>
+
+</resources>
