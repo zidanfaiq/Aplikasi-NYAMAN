@@ -25,7 +25,8 @@ class PesanAdapter(private val activity: Activity): RecyclerView.Adapter<PesanAd
         return PesanViewHolder(view)
     }
 
-    override fun getItemCount(): Int = listPesan.size
+    override fun getItemCount(): Int = this.listPesan.size
+
     override fun onBindViewHolder(holder: PesanViewHolder, position: Int) {
         holder.bind(listPesan[position], position)
     }

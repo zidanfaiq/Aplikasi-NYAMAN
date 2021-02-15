@@ -9,7 +9,7 @@
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/ivImg"
         android:layout_width="110dp"
-        android:layout_height="110dp"
+        android:layout_height="108dp"
         android:layout_marginTop="200dp"
         android:src="@drawable/ic_baseline_account_profil_circle_100"
         app:layout_constraintEnd_toEndOf="parent"
