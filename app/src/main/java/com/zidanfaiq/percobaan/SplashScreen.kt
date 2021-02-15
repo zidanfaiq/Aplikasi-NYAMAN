@@ -5,12 +5,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
-import androidx.appcompat.app.AppCompatDelegate
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
-import com.zidanfaiq.percobaan.data.SettingModel
-import com.zidanfaiq.percobaan.preferences.SettingPreference
 
 class SplashScreen : AppCompatActivity() {
 

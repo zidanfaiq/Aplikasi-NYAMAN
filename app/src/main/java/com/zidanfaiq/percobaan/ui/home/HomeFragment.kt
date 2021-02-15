@@ -1,19 +1,19 @@
-package com.zidanfaiq.percobaan.fragment
+package com.zidanfaiq.percobaan.ui.home
 
 import android.os.Bundle
 import android.view.*
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.app.AppCompatDelegate
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.Observer
+import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.zidanfaiq.percobaan.R
 import com.zidanfaiq.percobaan.adapter.MakananAdapter
 import com.zidanfaiq.percobaan.adapter.RestoAdapter
 import com.zidanfaiq.percobaan.data.Makanan
 import com.zidanfaiq.percobaan.data.Resto
-import com.zidanfaiq.percobaan.data.SettingModel
 import com.zidanfaiq.percobaan.databinding.FragmentHomeBinding
-import com.zidanfaiq.percobaan.preferences.SettingPreference
 
 class HomeFragment : Fragment() {
 
@@ -77,7 +77,7 @@ class HomeFragment : Fragment() {
     private fun showDataRestaurant() {
         (activity as AppCompatActivity).supportActionBar?.title = "Restoran"
         binding.rvData.layoutManager = LinearLayoutManager(activity)
-        val DataRestoAdapter = RestoAdapter(list, activity!!)
+        val DataRestoAdapter = RestoAdapter(list, requireActivity())
         binding.rvData.adapter = DataRestoAdapter
     }
 

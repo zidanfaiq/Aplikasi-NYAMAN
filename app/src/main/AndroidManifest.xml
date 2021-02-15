@@ -16,20 +16,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SettingActivity"></activity>
-
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main"></activity>
+        <activity android:name=".SettingActivity" />
         <activity
             android:name=".PhoneAuthActivity"
-            android:theme="@style/AppThemeLight"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeLight" />
         <activity
             android:name=".SignUpActivity"
-            android:theme="@style/AppThemeLight"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeLight" />
         <activity
             android:name=".SignInActivity"
-            android:theme="@style/AppThemeLight"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeLight" />
         <activity android:name=".PesanAddUpdateActivity" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
@@ -51,12 +53,9 @@
             android:label="@string/title_activity_detail"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".MainActivity"
-            android:screenOrientation="portrait"/>
-        <activity
             android:name=".SplashScreen"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

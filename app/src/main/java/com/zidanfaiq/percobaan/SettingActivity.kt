@@ -51,14 +51,6 @@ class SettingActivity : AppCompatActivity(), View.OnClickListener {
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
     }
 
-    private fun showPreferenceInForm() {
-        if (settingModel.isDarkTheme) {
-            binding.rbYes.isChecked = true
-        } else {
-            binding.rbNo.isChecked = true
-        }
-    }
-
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         menuInflater.inflate(R.menu.menu_save, menu)
         return super.onCreateOptionsMenu(menu)
@@ -74,6 +66,14 @@ class SettingActivity : AppCompatActivity(), View.OnClickListener {
         }
         return super.onOptionsItemSelected(item)
         return true
+    }
+
+    private fun showPreferenceInForm() {
+        if (settingModel.isDarkTheme) {
+            binding.rbYes.isChecked = true
+        } else {
+            binding.rbNo.isChecked = true
+        }
     }
 
     private fun saveSetting(isDark: Boolean) {

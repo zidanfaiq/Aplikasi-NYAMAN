@@ -1,13 +1,12 @@
-package com.zidanfaiq.percobaan.fragment
+package com.zidanfaiq.percobaan.ui.pesan
 
 import android.content.Intent
 import android.os.Bundle
 import android.view.*
-import androidx.fragment.app.Fragment
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
-import androidx.fragment.app.FragmentTransaction
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
@@ -19,11 +18,7 @@ import com.zidanfaiq.percobaan.R
 import com.zidanfaiq.percobaan.adapter.PesanAdapter
 import com.zidanfaiq.percobaan.data.Pesan
 import com.zidanfaiq.percobaan.databinding.FragmentPesanBinding
-import com.zidanfaiq.percobaan.helper.REQUEST_ADD
-import com.zidanfaiq.percobaan.helper.REQUEST_UPDATE
-import com.zidanfaiq.percobaan.helper.RESULT_ADD
-import com.zidanfaiq.percobaan.helper.RESULT_DELETE
-import com.zidanfaiq.percobaan.helper.RESULT_UPDATE
+import com.zidanfaiq.percobaan.helper
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
@@ -53,7 +48,7 @@ class PesanFragment : Fragment() {
         auth = Firebase.auth
         binding.rvPesan.layoutManager = LinearLayoutManager(activity)
         binding.rvPesan.setHasFixedSize(true)
-        adapter = PesanAdapter(activity!!)
+        adapter = PesanAdapter(requireActivity())
 
         loadPesan()
     }
@@ -75,7 +70,7 @@ class PesanFragment : Fragment() {
             }
             R.id.action_add -> {
                 val intent = Intent(activity, PesanAddUpdateActivity::class.java)
-                startActivityForResult(intent, REQUEST_ADD)
+                startActivityForResult(intent, helper.REQUEST_ADD)
             }
         }
         return super.onOptionsItemSelected(item)
@@ -107,7 +102,7 @@ class PesanFragment : Fragment() {
                     }
                 }
                 .addOnFailureListener { exception ->
-                    Toast.makeText(activity, "Error adding document",Toast.LENGTH_SHORT).show()
+                    Toast.makeText(activity, "Error adding document", Toast.LENGTH_SHORT).show()
                 }
         }
     }
@@ -116,19 +111,19 @@ class PesanFragment : Fragment() {
         super.onActivityResult(requestCode, resultCode, data)
         if (data != null) {
             when (requestCode) {
-                REQUEST_ADD -> if (resultCode == RESULT_ADD) {
+                helper.REQUEST_ADD -> if (resultCode == helper.RESULT_ADD) {
                     loadPesan()
-                    Toast.makeText(activity, "Satu menu berhasil di pesan",Toast.LENGTH_SHORT).show()
+                    Toast.makeText(activity, "Satu menu berhasil di pesan", Toast.LENGTH_SHORT).show()
                 }
-                REQUEST_UPDATE ->
+                helper.REQUEST_UPDATE ->
                     when (resultCode) {
-                        RESULT_UPDATE -> {
+                        helper.RESULT_UPDATE -> {
                             loadPesan()
-                            Toast.makeText(activity, "Satu pesan berhasil di ubah",Toast.LENGTH_SHORT).show()
+                            Toast.makeText(activity, "Satu pesan berhasil di ubah", Toast.LENGTH_SHORT).show()
                         }
-                        RESULT_DELETE -> {
+                        helper.RESULT_DELETE -> {
                             loadPesan()
-                            Toast.makeText(activity, "Satu pesan berhasil di hapus",Toast.LENGTH_SHORT).show()
+                            Toast.makeText(activity, "Satu pesan berhasil di hapus", Toast.LENGTH_SHORT).show()
                         }
                     }
             }

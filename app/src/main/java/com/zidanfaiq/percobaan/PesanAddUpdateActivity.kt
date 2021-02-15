@@ -11,7 +11,6 @@ import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
-import androidx.fragment.app.FragmentManager
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.firestore.FieldValue
@@ -20,7 +19,6 @@ import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 import com.zidanfaiq.percobaan.data.Pesan
 import com.zidanfaiq.percobaan.databinding.ActivityPesanAddUpdateBinding
-import com.zidanfaiq.percobaan.fragment.PesanFragment
 import com.zidanfaiq.percobaan.helper.ALERT_DIALOG_CLOSE
 import com.zidanfaiq.percobaan.helper.ALERT_DIALOG_DELETE
 import com.zidanfaiq.percobaan.helper.EXTRA_PESAN
