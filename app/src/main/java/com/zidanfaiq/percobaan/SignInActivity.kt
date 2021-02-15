@@ -28,7 +28,7 @@ class SignInActivity : AppCompatActivity(), View.OnClickListener {
         binding = ActivitySignInBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        supportActionBar?.title = "Login"
+        supportActionBar?.hide()
 
         binding.btnSign.setOnClickListener(this)
         binding.tvSignUp.setOnClickListener(this)

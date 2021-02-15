@@ -18,8 +18,7 @@ class SignUpActivity : AppCompatActivity(), View.OnClickListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        supportActionBar?.title = "Sign Up"
-        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.hide()
 
         binding = ActivitySignUpBinding.inflate(layoutInflater)
         setContentView(binding.root)
@@ -72,10 +71,5 @@ class SignUpActivity : AppCompatActivity(), View.OnClickListener {
             binding.inputPassword.error = null
         }
         return valid
-    }
-
-    override fun onSupportNavigateUp(): Boolean {
-        onBackPressed()
-        return true
     }
 }

@@ -1,143 +1,134 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:weightSum="4">
+    android:id="@+id/main_layout"
+    tools:context=".SignInActivity">
 
-    <ProgressBar
-        android:id="@+id/progressBar"
-        android:indeterminate="true"
+    <FrameLayout
         android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tvLogin"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:visibility="invisible"
-        style="?android:attr/progressBarStyleHorizontal"/>
+        android:layout_marginTop="110dp"
+        android:layout_marginBottom="100dp"
+        android:text="Login"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/inputEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context=".SignInActivity">
+    <EditText
+        android:id="@+id/inputEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="24dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/inputPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvLogin" />
 
-        <TextView
-            android:id="@+id/tvLogin"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="140dp"
-            android:layout_marginBottom="40dp"
-            android:text="Login"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@+id/inputEmail"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+    <EditText
+        android:id="@+id/inputPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="24dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/btnSign"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputEmail" />
 
-        <EditText
-            android:id="@+id/inputEmail"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="24dp"
-            android:layout_marginTop="40dp"
-            android:layout_marginEnd="24dp"
-            android:ems="10"
-            android:hint="Email"
-            android:inputType="textEmailAddress"
-            app:layout_constraintBottom_toTopOf="@+id/inputPassword"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvLogin" />
+    <Button
+        android:id="@+id/btnSign"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="24dp"
+        android:text="Login"
+        app:layout_constraintBottom_toTopOf="@+id/tvTextAccount"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputPassword" />
 
-        <EditText
-            android:id="@+id/inputPassword"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="24dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="24dp"
-            android:ems="10"
-            android:hint="Password"
-            android:inputType="textPassword"
-            app:layout_constraintBottom_toTopOf="@+id/btnSign"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/inputEmail" />
+    <TextView
+        android:id="@+id/tvTextAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="21dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Tidak punya akun?"
+        app:layout_constraintBottom_toTopOf="@+id/tvSignUp"
+        app:layout_constraintEnd_toEndOf="@+id/btnSign"
+        app:layout_constraintStart_toStartOf="@+id/btnSign"
+        app:layout_constraintTop_toBottomOf="@+id/btnSign" />
 
-        <Button
-            android:id="@+id/btnSign"
-            style="@style/Widget.AppCompat.Button.Colored"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="24dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="24dp"
-            android:text="Login"
-            app:layout_constraintBottom_toTopOf="@+id/tvTextAccount"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/inputPassword" />
+    <TextView
+        android:id="@+id/tvSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Sign Up"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btnEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTextAccount" />
 
-        <TextView
-            android:id="@+id/tvTextAccount"
-            android:layout_width="wrap_content"
-            android:layout_height="21dp"
-            android:layout_marginTop="20dp"
-            android:gravity="center"
-            android:text="Tidak punya akun?"
-            app:layout_constraintBottom_toTopOf="@+id/tvSignUp"
-            app:layout_constraintEnd_toEndOf="@+id/btnSign"
-            app:layout_constraintStart_toStartOf="@+id/btnSign"
-            app:layout_constraintTop_toBottomOf="@+id/btnSign" />
+    <Button
+        android:id="@+id/btnEmail"
+        android:layout_width="220dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="@android:color/white"
+        android:drawableLeft="@drawable/ic_google_icon"
+        android:text="Login dengan Google"
+        android:textAllCaps="false"
+        android:textColor="@android:color/tab_indicator_text"
+        app:layout_constraintBottom_toTopOf="@+id/btnPhone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSignUp" />
 
-        <TextView
-            android:id="@+id/tvSignUp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="5dp"
-            android:gravity="center"
-            android:text="Sign Up"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@+id/btnEmail"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvTextAccount" />
+    <Button
+        android:id="@+id/btnPhone"
+        android:layout_width="220dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@android:color/white"
+        android:drawableLeft="@drawable/ic_baseline_phone_android_24"
+        android:text="Login dengan Telepon"
+        android:textAllCaps="false"
+        android:textColor="@android:color/tab_indicator_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnEmail" />
 
-        <Button
-            android:id="@+id/btnEmail"
-            android:layout_width="220dp"
-            android:layout_height="60dp"
-            android:layout_marginTop="60dp"
-            android:backgroundTint="@android:color/white"
-            android:drawableLeft="@drawable/ic_google_icon"
-            android:text="Login dengan Google"
-            android:textAllCaps="false"
-            android:textColor="@android:color/tab_indicator_text"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintBottom_toTopOf="@+id/btnPhone"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvSignUp" />
-
-        <Button
-            android:id="@+id/btnPhone"
-            android:layout_width="220dp"
-            android:layout_height="60dp"
-            android:layout_marginBottom="140dp"
-            android:backgroundTint="@android:color/white"
-            android:drawableLeft="@drawable/ic_baseline_phone_android_24"
-            android:text="Login dengan Telepon"
-            android:textAllCaps="false"
-            android:textColor="@android:color/tab_indicator_text"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/btnEmail" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
