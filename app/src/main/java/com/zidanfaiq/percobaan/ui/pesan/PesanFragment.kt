@@ -6,7 +6,6 @@ import android.view.*
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.FragmentManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
@@ -19,6 +18,12 @@ import com.zidanfaiq.percobaan.adapter.PesanAdapter
 import com.zidanfaiq.percobaan.data.Pesan
 import com.zidanfaiq.percobaan.databinding.FragmentPesanBinding
 import com.zidanfaiq.percobaan.helper
+import com.zidanfaiq.percobaan.helper.REQUEST_ADD
+import com.zidanfaiq.percobaan.helper.REQUEST_UPDATE
+import com.zidanfaiq.percobaan.helper.RESULT_ADD
+import com.zidanfaiq.percobaan.helper.RESULT_DELETE
+import com.zidanfaiq.percobaan.helper.RESULT_UPDATE
+import kotlinx.android.synthetic.main.fragment_pesan.*
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
@@ -49,8 +54,12 @@ class PesanFragment : Fragment() {
         binding.rvPesan.layoutManager = LinearLayoutManager(activity)
         binding.rvPesan.setHasFixedSize(true)
         adapter = PesanAdapter(requireActivity())
-
+        progressbar.visibility = View.VISIBLE
         loadPesan()
+        swiperefresh.setOnRefreshListener {
+            progressbar.visibility = View.INVISIBLE
+            loadPesan()
+        }
     }
 
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
@@ -60,14 +69,6 @@ class PesanFragment : Fragment() {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
-            R.id.action_refresh -> {
-                val mFragmentManager = fragmentManager as FragmentManager
-                mFragmentManager
-                    .beginTransaction()
-                    .detach(this)
-                    .attach(this)
-                    .commit()
-            }
             R.id.action_add -> {
                 val intent = Intent(activity, PesanAddUpdateActivity::class.java)
                 startActivityForResult(intent, helper.REQUEST_ADD)
@@ -85,6 +86,8 @@ class PesanFragment : Fragment() {
                 .whereEqualTo("uid", currentUser?.uid)
                 .get()
                 .addOnSuccessListener { result ->
+                    progressbar.visibility = View.INVISIBLE
+                    swiperefresh.isRefreshing = false
                     for (document in result) {
                         val id = document.id
                         val menupesan = document.get("menu").toString()
@@ -111,17 +114,17 @@ class PesanFragment : Fragment() {
         super.onActivityResult(requestCode, resultCode, data)
         if (data != null) {
             when (requestCode) {
-                helper.REQUEST_ADD -> if (resultCode == helper.RESULT_ADD) {
+                REQUEST_ADD -> if (resultCode == RESULT_ADD) {
                     loadPesan()
                     Toast.makeText(activity, "Satu menu berhasil di pesan", Toast.LENGTH_SHORT).show()
                 }
-                helper.REQUEST_UPDATE ->
+                REQUEST_UPDATE ->
                     when (resultCode) {
-                        helper.RESULT_UPDATE -> {
+                        RESULT_UPDATE -> {
                             loadPesan()
                             Toast.makeText(activity, "Satu pesan berhasil di ubah", Toast.LENGTH_SHORT).show()
                         }
-                        helper.RESULT_DELETE -> {
+                        RESULT_DELETE -> {
                             loadPesan()
                             Toast.makeText(activity, "Satu pesan berhasil di hapus", Toast.LENGTH_SHORT).show()
                         }
