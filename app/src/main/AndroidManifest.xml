@@ -22,7 +22,8 @@
             android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity
             android:name=".MainActivity"
-            android:label="@string/title_activity_main" />
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait"/>
         <activity android:name=".SettingActivity" />
         <activity
             android:name=".PhoneAuthActivity"
