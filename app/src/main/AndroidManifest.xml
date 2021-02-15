@@ -17,8 +17,12 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".DetailMakananActivity"
+            android:label="@string/title_activity_detail_makanan"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
             android:name=".MainActivity"
-            android:label="@string/title_activity_main"></activity>
+            android:label="@string/title_activity_main" />
         <activity android:name=".SettingActivity" />
         <activity
             android:name=".PhoneAuthActivity"

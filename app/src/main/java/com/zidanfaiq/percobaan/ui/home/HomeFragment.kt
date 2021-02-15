@@ -2,11 +2,8 @@ package com.zidanfaiq.percobaan.ui.home
 
 import android.os.Bundle
 import android.view.*
-import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.zidanfaiq.percobaan.R
 import com.zidanfaiq.percobaan.adapter.MakananAdapter
@@ -60,13 +57,13 @@ class HomeFragment : Fragment() {
 
     fun getListDataMakanan(): ArrayList<Makanan> {
         val dataNamaMakanan = resources.getStringArray(R.array.data_nama_makanan)
-        val dataHargaMakanan = resources.getStringArray(R.array.data_harga_makanan)
+        val dataDeskripsiMakanan = resources.getStringArray(R.array.data_deskripsi_makanan)
         val dataFotoMakanan = resources.getStringArray(R.array.data_foto_makanan)
         val listDataMakanan = ArrayList<Makanan>()
         for (position in dataNamaMakanan.indices) {
             val DataMakanan = Makanan(
                 dataNamaMakanan[position],
-                dataHargaMakanan[position],
+                dataDeskripsiMakanan[position],
                 dataFotoMakanan[position]
             )
             listDataMakanan.add(DataMakanan)
@@ -84,7 +81,7 @@ class HomeFragment : Fragment() {
     private fun showDataMakanan() {
         (activity as AppCompatActivity).supportActionBar?.title = "Makanan"
         binding.rvData.layoutManager = LinearLayoutManager(activity)
-        val DataFoodAdapter = MakananAdapter(list2)
+        val DataFoodAdapter = MakananAdapter(list2, requireActivity())
         binding.rvData.adapter = DataFoodAdapter
     }
 

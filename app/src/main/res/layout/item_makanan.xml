@@ -24,16 +24,17 @@
             android:id="@+id/tv_nama_makanan"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="5dp"
             android:textSize="16sp"
             android:textStyle="bold"
             tools:text="nama" />
 
         <TextView
-            android:id="@+id/tv_harga"
+            android:id="@+id/tv_deskripsi_makanan"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ellipsize="end"
-            tools:text="harga" />
+            android:maxLines="2"
+            tools:text="deskripsi" />
     </LinearLayout>
 </RelativeLayout>

@@ -28,7 +28,7 @@ class DetailActivity : AppCompatActivity() {
         val DataResto by getParcelableExtra<Resto>(DetailActivity.EXTRA_DATARESTO)
         supportActionBar?.title = DataResto?.nama_resto.toString()
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
-        tv_deskripsi_resto.text = DataResto?.deskripsi_resto.toString()
+        tv_deskripsi.text = DataResto?.deskripsi_resto.toString()
 
         Glide.with(this)
             .load(DataResto?.foto_resto.toString())

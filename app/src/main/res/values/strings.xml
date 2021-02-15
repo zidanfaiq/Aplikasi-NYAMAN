@@ -176,17 +176,17 @@ Telepon : +622811500074"</item>
         <item>Susu</item>
     </string-array>
 
-    <string-array name="data_harga_makanan">
-        <item>Rp. 12.000</item>
-        <item>Rp. 12.000</item>
-        <item>Rp. 12.000</item>
-        <item>Rp. 15.000</item>
-        <item>Rp. 15.000</item>
-        <item>Rp. 1.000</item>
-        <item>Rp. 2.000</item>
-        <item>Rp. 4.000</item>
-        <item>Rp. 10.000</item>
-        <item>Rp. 5.000</item>
+    <string-array name="data_deskripsi_makanan">
+        <item>Nasi goreng adalah sebuah makanan berupa nasi yang digoreng dan diaduk dalam minyak goreng, margarin, atau mentega. Biasanya ditambah kecap manis, bawang merah, bawang putih, asam jawa, lada dan bumbu-bumbu lainnya seperti telur, ayam, dan kerupuk. Ada pula nasi goreng jenis lain yang dibuat bersama ikan asin yang juga populer di seluruh Indonesia. Nasi goreng juga dikenal sebagai masakan nasional Indonesia. Dari sekian banyak hidangan dalam khazanah Masakan Indonesia, hanya sedikit yang dapat dianggap sebagai makanan nasional sejati. Masakan nasional Indonesia ini tidak mengenal batasan kelas sosial. Nasi goreng dapat dinikmati secara sederhana di warung tepi jalan, gerobak penjaja keliling, hingga restoran dan meja prasmanan dalam pesta.</item>
+        <item>Mie goreng berarti "mie yang digoreng" adalah makanan yang berasal dari Indonesia yang populer dan juga digemari di Malaysia, dan Singapura. Mie goreng terbuat dari mie kuning yang digoreng dengan sedikit minyak goreng, dan ditambahkan bawang putih, bawang merah, udang serta daging ayam atau daging sapi, irisan bakso, cabai, sayuran, tomat, telur ayam, dan acar. Makanan ini sangat populer dan dapat ditemui di mana-mana di Indonesia, mulai dari pedagang pinggir jalan (kaki lima) sampai restoran mewah. Mie goreng juga dapat ditemukan di warung Malaysia dan Singapura. Versi mie instan dari mie goreng juga sangat populer, seperti Indomie Mie goreng.</item>
+        <item>Mie kuah merupakan "mie yang direbus" adalah makanan yang berasal dari Indonesia yang populer dan juga digemari di Malaysia, dan Singapura. Mie kuah terbuat dari mie kuning yang direbus, dan ditambahkan bawang putih, bawang merah, udang serta daging ayam atau daging sapi, irisan bakso, cabai, sayuran, tomat, telur ayam, dan acar. Makanan ini sangat populer dan dapat ditemui di mana-mana di Indonesia, mulai dari pedagang pinggir jalan (kaki lima) sampai restoran mewah. Mie kuah juga dapat ditemukan di warung Malaysia dan Singapura. Versi mie instan dari mie kuah juga sangat populer, seperti Indomie Mie kuah.</item>
+        <item>Nasi Putih dengan lauk ayam goreng dengan lalaban dan sambal.  Makanan ini dapat ditemui di mana-mana di Indonesia, mulai dari warung makan  pinggir jalan sampai restoran mewah</item>
+        <item>Nasi Putih dengan lauk ayam bakar yang dikecapi dengan lalaban dan sambal. Makanan ini dapat ditemui di mana-mana di Indonesia, mulai dari warung makan  pinggir jalan sampai restoran mewah</item>
+        <item>Air mineral adalah air yang mengandung mineral atau bahan-bahan larut lain yang mengubah rasa atau memberi nilai-nilai terapi. Banyak kandungan Garam, sulfur, dan gas-gas yang larut di dalam air ini. Air mineral biasanya masih memiliki buih. Air mineral bersumber dari mata air yang berada di alam.</item>
+        <item>Es teh atau Teh es adalah teh yang didinginkan dengan es batu. Es teh sering kali ditambahkan rasa seperti melati, dan buah-buahan seperti limun, ceri, dan arbei, atau susu. Es teh adalah minuman yang sering diminum saat siang hari karena suhu udara yang panas. Di warteg, es teh sering diminum selain air dingin. Teh tarik adalah contoh dari es teh. Selain itu, beberapa merek juga menyediakan es teh, seperti Teh Botol, Frestea, dan Nu Green Tea.</item>
+        <item>Jus jeruk adalah jus buah yang diperoleh dengan memeras atau menekan isi buah jeruk. Diminum di banyak tempat di dunia, sari buah jeruk biasanya menjadi bagian makan pagi atau sarapan. Karena adanya vitamin C, jus jeruk dapat melawan beberapa penyakit seperti flu dan pilek, meningkatkan sistem kekebalan tubuh.</item>
+        <item>Jus alpukat merupakan salah satu minuman sehat yang cukup populer di berbagai belahan dunia. Jus buah alpukat baik dikonsumsi oleh berbagai kalangan usia, mulai anak-anak, orang dewasa, hingga lanjut usia (lansia). Selain rasanya yang enak dan menyegarkan, jus alpukat memiliki segudang manfaat bagi kesehatan tubuh. Bahkan minuman ini kerap dijadikan salah satu menu diet sehat bagi mereka yang berhasrat menurunkan berat badan. Jus buah alpukat disebut mengandung lemak tak jenuh sehingga aman untuk dikonsumsi secara rutin. Tak hanya lemak baik, minuman yang satu ini juga kaya nutrisi, seperti vitamin A,B,C,E, dan K serta karbohidrat, protein, folat, hingga magnesium.</item>
+        <item>susu memiliki banyak fungsi dan manfaat. Untuk umur produktif, susu membantu pertumbuhan mereka. Sementara itu, untuk orang lanjut usia, susu membantu menopang tulang agar tidak keropos. Susu secara alami mengandung nutrisi penting, seperti bermacam-macam vitamin, protein, kalsium, magnesium, fosfor, dan zinc, pendapat lain menambahkan bahwa susu mengandung mineral dan lemak. Oleh karena itu, setiap orang dianjurkan minum susu</item>
     </string-array>
 
     <string-array name="data_foto_makanan">
@@ -195,7 +195,7 @@ Telepon : +622811500074"</item>
         <item>https://1.bp.blogspot.com/-75aVPrF8NXk/WcHeSLnLJHI/AAAAAAAABn0/Xbb_V6o0n08i5o-583EOIrzbA6bRtiuhQCLcBGAs/s1600/1505877492607.jpg</item>
         <item>https://cdn.idntimes.com/content-images/post/20191205/72490026-776557992815618-593725874878062028-n-df889a18e4dde5cdbfe82d5ad558b3ef.jpg</item>
         <item>https://totabuan.news/wp-content/uploads/2020/05/20180604150310-1-ilustrasi-ayam-bakar-003-tantri-setyorini.jpg</item>
-        <item>https://4.bp.blogspot.com/-qz0hlotjdFw/XMji--lk8RI/AAAAAAAAD78/8s5ytGzilwce94yYE_5yvJQ0-YlKVyRjgCLcBGAs/s1600/bottle-2582012_1280.jpg</item>
+        <item>https://cdn-2.tstatic.net/bali/foto/bank/images/ilustrasi-air-putih-minum-air.jpg</item>
         <item>https://cdn.akurat.co/images/uploads/images/akurat_20181029123557_B6tXpj.jpg</item>
         <item>https://www.sijekpulsa.com/assets_shop/product/ifrA-3543-original.jpg</item>
         <item>https://cdn.yummy.co.id/content-images/images/20200702/M1FzhM0fy2wwuNp1uzhDc5Wox04qOhmd-31353933363633383639d41d8cd98f00b204e9800998ecf8427e_800x800.jpg</item>
@@ -329,5 +329,6 @@ Telepon : +622811500074"</item>
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    <string name="title_activity_detail_makanan">ScrollingActivity</string>
 
 </resources>
