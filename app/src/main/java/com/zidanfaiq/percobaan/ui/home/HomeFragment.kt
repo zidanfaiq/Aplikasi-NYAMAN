@@ -79,7 +79,7 @@ class HomeFragment : Fragment() {
     }
 
     private fun showDataMakanan() {
-        (activity as AppCompatActivity).supportActionBar?.title = "Makanan"
+        (activity as AppCompatActivity).supportActionBar?.title = "Menu"
         binding.rvData.layoutManager = LinearLayoutManager(activity)
         val DataFoodAdapter = MakananAdapter(list2, requireActivity())
         binding.rvData.adapter = DataFoodAdapter
