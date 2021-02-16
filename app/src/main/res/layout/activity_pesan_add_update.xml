@@ -13,8 +13,7 @@
         android:visibility="invisible"
         app:layout_anchor="@id/layout"
         app:layout_anchorGravity="center" />
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
+    <LinearLayout
         android:id="@+id/layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

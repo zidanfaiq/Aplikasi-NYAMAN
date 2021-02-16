@@ -38,7 +38,7 @@ class PesanAdapter(private val activity: Activity): RecyclerView.Adapter<PesanAd
             binding.tvItemMenu.text = pesan.menupesan
             val timestamp = pesan.date as com.google.firebase.Timestamp
             val milliseconds = timestamp.seconds * 1000 + timestamp.nanoseconds / 1000000
-            val sdf = SimpleDateFormat("dd/MMM/yyyy, HH:mm")
+            val sdf = SimpleDateFormat("dd/MM/yy, HH:mm")
             val netDate = Date(milliseconds)
             val date = sdf.format(netDate).toString()
             binding.tvItemDate.text = date

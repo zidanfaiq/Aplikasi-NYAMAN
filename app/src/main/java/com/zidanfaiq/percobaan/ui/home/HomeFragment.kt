@@ -5,14 +5,37 @@ import android.view.*
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.viewpager.widget.ViewPager
+import com.google.android.material.tabs.TabLayout
 import com.zidanfaiq.percobaan.R
 import com.zidanfaiq.percobaan.adapter.MakananAdapter
+import com.zidanfaiq.percobaan.adapter.MyPagerAdapter
 import com.zidanfaiq.percobaan.adapter.RestoAdapter
 import com.zidanfaiq.percobaan.data.Makanan
 import com.zidanfaiq.percobaan.data.Resto
 import com.zidanfaiq.percobaan.databinding.FragmentHomeBinding
 
 class HomeFragment : Fragment() {
+
+    private lateinit var viewPager: ViewPager
+    private lateinit var tabs: TabLayout
+
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+        // Inflate the layout for this fragment
+        val view: View = inflater.inflate(R.layout.fragment_home, container, false)
+        viewPager = view.findViewById(R.id.viewpager_main)
+        tabs = view.findViewById(R.id.tabs_main)
+
+        val fragmentAdapter = MyPagerAdapter(childFragmentManager)
+        viewPager.adapter = fragmentAdapter
+        tabs.setupWithViewPager(viewPager)
+
+        return view
+    }
+}
+
+
+/**class HomeFragment : Fragment() {
 
     private val list = ArrayList<Resto>()
     private val list2 = ArrayList<Makanan>()
@@ -105,4 +128,4 @@ class HomeFragment : Fragment() {
             }
         }
     }
-}
+}*/
