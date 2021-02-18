@@ -1,56 +1,112 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
     tools:context=".ui.profil.ProfilFragment">
 
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/ivImg"
-        android:layout_width="110dp"
-        android:layout_height="108dp"
-        android:layout_marginTop="200dp"
-        android:src="@drawable/ic_baseline_account_profil_circle_100"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="vertical">
 
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/ivImage"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="200dp"
-        app:layout_constraintBottom_toTopOf="@+id/tvName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ivImg"
+            android:layout_width="105dp"
+            android:layout_height="104dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/ic_baseline_account_profil_circle_100" />
 
-    <TextView
-        android:id="@+id/tvName"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="User ID"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/tvUserId"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ivImage" />
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ivImage"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="22dp"
+            android:layout_marginRight="8dp" />
 
-    <TextView
-        android:id="@+id/tvUserId"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="UID"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvName"
-        app:layout_constraintVertical_bias="0.21" />
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="User ID"
+            android:textSize="20sp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:layout_marginTop="47dp"
+            android:layout_marginRight="15dp"
+            android:textColor="@android:color/white"
+            android:layout_toRightOf="@id/ivImage"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:id="@+id/tvUserId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="UID"
+            android:layout_below="@id/tvName"
+            android:layout_marginRight="15dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@android:color/white"
+            android:layout_toRightOf="@id/ivImage"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/white_background">
+
+        <Button
+            android:id="@+id/favorit"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/pesanan"
+            android:drawableLeft="@drawable/ic_baseline_favorite_border_24"
+            android:drawableRight="@drawable/ic_baseline_arrow_forward_ios_24"
+            android:textAlignment="viewStart"
+            android:text="    Favorit Saya"
+            android:textAllCaps="false"
+            android:backgroundTint="?android:attr/windowBackground"
+            android:textColor="?attr/colorControlNormal"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"/>
+
+        <Button
+            android:id="@+id/tentang"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:drawableLeft="@drawable/ic_baseline_people_outline_24"
+            android:textAlignment="viewStart"
+            android:text="    Tentang Kami"
+            android:drawableRight="@drawable/ic_baseline_arrow_forward_ios_24"
+            android:textAllCaps="false"
+            android:backgroundTint="?android:attr/windowBackground"
+            android:textColor="?attr/colorControlNormal"
+            android:layout_below="@id/favorit"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"/>
+
+        <Button
+            android:id="@+id/pesanan"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:drawableLeft="@drawable/ic_baseline_receipt_24"
+            android:text="    Pesanan Saya"
+            android:drawableRight="@drawable/ic_baseline_arrow_forward_ios_24"
+            android:textAlignment="viewStart"
+            android:textAllCaps="false"
+            android:textColor="?attr/colorControlNormal"
+            android:backgroundTint="?android:attr/windowBackground"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

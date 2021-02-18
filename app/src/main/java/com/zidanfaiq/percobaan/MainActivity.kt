@@ -27,6 +27,8 @@ class MainActivity : AppCompatActivity() {
     private lateinit var settingModel: SettingModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        mSettingPreference = SettingPreference(this)
+        showExistingPreference()
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         val navView: BottomNavigationView = findViewById(R.id.nav_view)
@@ -42,8 +44,6 @@ class MainActivity : AppCompatActivity() {
 
         auth = Firebase.auth
 
-        mSettingPreference = SettingPreference(this)
-        showExistingPreference()
         receiver = AirplaneModeChangedReceiver()
         receiver2 = PowerConnectionReceiver()
 

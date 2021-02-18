@@ -1,6 +1,5 @@
 package com.zidanfaiq.percobaan.ui.pesan
 
-import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.view.*
@@ -58,7 +57,6 @@ class PesanFragment : Fragment() {
         progressbar.visibility = View.VISIBLE
         loadPesan()
         swiperefresh.setOnRefreshListener {
-            progressbar.visibility = View.INVISIBLE
             loadPesan()
         }
     }
@@ -87,8 +85,12 @@ class PesanFragment : Fragment() {
                 .whereEqualTo("uid", currentUser?.uid)
                 .get()
                 .addOnSuccessListener { result ->
-                    progressbar.visibility = View.INVISIBLE
-                    swiperefresh.isRefreshing = false
+                    if(progressbar != null) {
+                        progressbar.visibility = View.INVISIBLE
+                    }
+                    if(swiperefresh != null) {
+                        swiperefresh.isRefreshing = false
+                    }
                     for (document in result) {
                         val id = document.id
                         val menupesan = document.get("menu").toString()

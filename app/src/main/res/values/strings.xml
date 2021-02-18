@@ -7,6 +7,8 @@
     <string name="pesan">Pesan</string>
     <string name="tampil_resto">Restoran</string>
     <string name="tampil_makanan">Menu</string>
+    <string name="about">Aplikasi NYAM.AN merupakan aplikasi untuk memesan makanan secara efektif dan efisien dengan cara memesan dengan menggunakan smartphone. Aplikasi ini digunakan pada pelanggan untuk memesan makanan agar tidak perlu mengantri, aplikasi ini dapat menampilkan beberapa detail rumah makan dan menampilkan detail data makanan dan harga yang akan dipesan maupun yang sudah dipesan, dan dapat mempermudah admin untuk merinci semua daftar pesanan.</string>
+
 
     <string-array name="data_nama_resto">
         <item>Table Nine Resto</item>
@@ -22,106 +24,16 @@
     </string-array>
 
     <string-array name="data_deskripsi_resto">
-        <item>"Jl. Profesor DR. HR Bunyamin Purwokerto Utara, Pabuwaran, Pabuaran, Banyumas, Kabupaten Banyumas, Jawa Tengah 53124
-Buka :
-Senin, 09.00–22.00
-Selasa, 09.00–22.00
-Rabu, 09.00–22.00
-Kamis, 09.00–22.00
-Jumat, 09.00–22.00
-Sabtu, 09.00–22.00
-Minggu, 09.00–22.00
-Telepon : +62281627799"</item>
-        <item>"Jalan Raya Baturaden No.KM. 6, Karang Blimbing, Pandak, Kec. Baturaden, Kabupaten Banyumas, Jawa Tengah 53124
-Buka :
-Senin, 09.00–22.00
-Selasa, 09.00–22.00
-Rabu, 09.00–22.00
-Kamis, 09.00–22.00
-Jumat, 09.00–22.00
-Sabtu, 09.00–22.00
-Minggu, 09.00–22.00
-Telepon : +622816574573"</item>
-        <item>"Purwanegara, Karangjambu, Purwanegara, Kec. Purwokerto Tim., Kabupaten Banyumas, Jawa Tengah 53127
-Buka :
-Senin, 11.00–22.00
-Selasa, 11.00–22.00
-Rabu, 11.00–22.00
-Kamis, 11.00–22.00
-Jumat, 11.00–22.00
-Sabtu, 11.00–22.00
-Minggu, 11.00–22.00
-Telepon : +6281903304254"</item>
-        <item>"Jl. KH. Wahid Hasyim No.101 - 103, Windusara, Karangklesem, Kec. Purwokerto Sel., Kabupaten Banyumas, Jawa Tengah 53144
-Buka :
-Senin, 10.00–20.00
-Selasa, 10.00–20.00
-Rabu, 10.00–20.00
-Kamis, 10.00–20.00
-Jumat, 10.00–20.00
-Sabtu, 10.00–20.00
-Minggu, 10.00–20.00
-Telepon : +62281635169"</item>
-        <item>"Jl. Gelora Indah I, Mangunjaya, Purwokerto Lor, Kec. Purwokerto Tim., Kabupaten Banyumas, Jawa Tengah 53113
-Buka :
-Senin, 09.00–21.00
-Selasa, 09.00–21.00
-Rabu, 09.00–21.00
-Kamis, 09.00–21.00
-Jumat, 09.00–21.00
-Sabtu, 09.00–21.00
-Minggu, 09.00–21.00
-Telepon : +628112626772"</item>
-        <item>"Jl. DI Panjaitan No.217, Karangreja, Purwokerto Kidul, Kec. Purwokerto Sel., Kabupaten Banyumas, Jawa Tengah 53141
-Buka :
-Senin, 11.00–20.00
-Selasa, 11.00–20.00
-Rabu, 11.00–20.00
-Kamis, 11.00–20.00
-Jumat, 11.00–20.00
-Sabtu, 07.30–22.00
-Minggu, 11.00–20.00
-Telepon : +62281636372"</item>
-        <item>"Jl. DR. Soeparno No.98, Arcawinangun, Kec. Purwokerto Tim., Kabupaten Banyumas, Jawa Tengah 53113
-Buka :
-Senin, Buka 24 jam
-Selasa, Buka 24 jam
-Rabu, Buka 24 jam
-Kamis, Buka 24 jam
-Jumat, Buka 24 jam
-Sabtu, Buka 24 jam
-Minggu, Buka 24 jam
-Telepon : +628112993333"</item>
-        <item>"Jl. Pierre Tendean No.41, Brubahan, Purwanegara, Kec. Purwokerto Utara, Kabupaten Banyumas, Jawa Tengah 53116
-Buka :
-Senin, 09.00–21.00
-Selasa, 09.00–21.00
-Rabu, 09.00–21.00
-Kamis, 09.00–21.00
-Jumat, 09.00–21.00
-Sabtu, 09.00–21.00
-Minggu, 09.00–21.00
-Telepon : +62281642243"</item>
-        <item>"Jl. Gelora Indah 2 No.7, Mangunjaya, Purwokerto Lor, Kec. Purwokerto Tim., Kabupaten Banyumas, Jawa Tengah 53114
-Buka :
-Senin, 10.00–21.30
-Selasa, 10.00–21.30
-Rabu, 10.00–21.30
-Kamis, 10.00–21.30
-Jumat, 10.00–21.30
-Sabtu, 10.00–21.30
-Minggu, 10.00–21.30
-Telepon : +622816512946"</item>
-        <item>"Jl. DR. Soeparno, Arcawinangun, Kec. Purwokerto Tim., Kabupaten Banyumas, Jawa Tengah 53113
-Buka :
-Senin, 08.00–21.00
-Selasa, 08.00–21.00
-Rabu, 08.00–21.00
-Kamis, 08.00–21.00
-Jumat, 08.00–21.00
-Sabtu, 08.00–21.00
-Minggu, 08.00–21.00
-Telepon : +622811500074"</item>
+        <item>"Jl. Profesor DR. HR Bunyamin Purwokerto Utara, Pabuwaran, Pabuaran, Banyumas, Kabupaten Banyumas, Jawa Tengah 53124"</item>
+        <item>"Jalan Raya Baturaden No.KM. 6, Karang Blimbing, Pandak, Kec. Baturaden, Kabupaten Banyumas, Jawa Tengah 53124"</item>
+        <item>"Purwanegara, Karangjambu, Purwanegara, Kec. Purwokerto Tim., Kabupaten Banyumas, Jawa Tengah 53127"</item>
+        <item>"Jl. KH. Wahid Hasyim No.101 - 103, Windusara, Karangklesem, Kec. Purwokerto Sel., Kabupaten Banyumas, Jawa Tengah 53144"</item>
+        <item>"Jl. Gelora Indah I, Mangunjaya, Purwokerto Lor, Kec. Purwokerto Tim., Kabupaten Banyumas, Jawa Tengah 53113"</item>
+        <item>"Jl. DI Panjaitan No.217, Karangreja, Purwokerto Kidul, Kec. Purwokerto Sel., Kabupaten Banyumas, Jawa Tengah 53141"</item>
+        <item>"Jl. DR. Soeparno No.98, Arcawinangun, Kec. Purwokerto Tim., Kabupaten Banyumas, Jawa Tengah 53113"</item>
+        <item>"Jl. Pierre Tendean No.41, Brubahan, Purwanegara, Kec. Purwokerto Utara, Kabupaten Banyumas, Jawa Tengah 53116"</item>
+        <item>"Jl. Gelora Indah 2 No.7, Mangunjaya, Purwokerto Lor, Kec. Purwokerto Tim., Kabupaten Banyumas, Jawa Tengah 53114"</item>
+        <item>"Jl. DR. Soeparno, Arcawinangun, Kec. Purwokerto Tim., Kabupaten Banyumas, Jawa Tengah 53113"</item>
     </string-array>
 
     <string-array name="data_foto_resto">
@@ -170,7 +82,7 @@ Telepon : +622811500074"</item>
         <item>Nasi Ayam Goreng</item>
         <item>Nasi Ayam Bakar</item>
         <item>Air Putih</item>
-        <item>Tea</item>
+        <item>Es Teh</item>
         <item>Jus Jeruk</item>
         <item>Jus Alpukat</item>
         <item>Susu</item>

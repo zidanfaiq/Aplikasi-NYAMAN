@@ -6,19 +6,23 @@
     android:layout_height="match_parent"
     android:id="@+id/setting_container"
     android:orientation="vertical"
-    android:padding="16dp"
     tools:context=".SettingActivity">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="6dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
         android:text="@string/dark_theme" />
     <RadioGroup
         android:id="@+id/rg_love_mu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
         android:orientation="horizontal">
         <RadioButton
             android:id="@+id/rb_yes"
@@ -38,32 +42,57 @@
         android:id="@+id/divider1"
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="?android:attr/listDivider" />
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="?android:attr/listDivider"/>
 
-    <TextView
+    <LinearLayout
         android:id="@+id/tvEmailVerify"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:gravity="center_vertical"
-        android:text="Verifikasi Email" />
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="?attr/selectableItemBackground">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center_vertical"
+            android:text="Verifikasi Email"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"/>
+
+    </LinearLayout>
 
     <View
         android:id="@+id/divider2"
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="?android:attr/listDivider" />
+        android:background="?android:attr/listDivider"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"/>
 
-    <TextView
+    <LinearLayout
         android:id="@+id/tvSignOut"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:gravity="center_vertical"
-        android:text="Logout" />
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="?attr/selectableItemBackground">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center_vertical"
+            android:text="Logout"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"/>
+    </LinearLayout>
 
     <View
         android:id="@+id/divider3"
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="?android:attr/listDivider" />
+        android:background="?android:attr/listDivider"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"/>
 
 </LinearLayout>

@@ -14,11 +14,13 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
+import com.zidanfaiq.percobaan.AboutUsActivity
 import com.zidanfaiq.percobaan.R
 import com.zidanfaiq.percobaan.SettingActivity
+import com.zidanfaiq.percobaan.SignUpActivity
 import com.zidanfaiq.percobaan.databinding.FragmentProfilBinding
 
-class ProfilFragment : Fragment() {
+class ProfilFragment : Fragment(), View.OnClickListener {
 
     private lateinit var auth: FirebaseAuth
     private lateinit var googleSignInClient: GoogleSignInClient
@@ -50,6 +52,17 @@ class ProfilFragment : Fragment() {
 
         val currentUser = auth.currentUser
         updateUI(currentUser!!)
+
+        binding.tentang.setOnClickListener(this)
+    }
+
+    override fun onClick(v: View) {
+        when (v.id) {
+            R.id.tentang -> {
+                val intent = Intent(activity, AboutUsActivity::class.java)
+                startActivity(intent)
+            }
+        }
     }
 
     private fun updateUI(currentUser: FirebaseUser) {
@@ -63,12 +76,13 @@ class ProfilFragment : Fragment() {
 
             binding.tvName.text = name
             if(TextUtils.isEmpty(name)){
-                binding.tvName.text = "User"
+                binding.tvName.text = email!!.substringBefore("@")
             }
             binding.tvUserId.text = email
             for (profile in it.providerData) {
                 val providerId = profile.providerId
                 if(providerId=="phone"){
+                    binding.tvName.text = "User"
                     binding.tvUserId.text = phoneNumber
                 }
             }
